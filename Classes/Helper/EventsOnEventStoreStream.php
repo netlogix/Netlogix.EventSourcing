@@ -18,9 +18,9 @@ final class EventsOnEventStoreStream
      */
     private array $events;
 
-    private ?StreamName $streamName;
+    private ?StreamName $streamName = null;
 
-    private ?EventStoreIdentifier $eventStoreIdentifier;
+    private ?EventStoreIdentifier $eventStoreIdentifier = null;
 
     private function __construct(DomainEventInterface ...$events)
     {

@@ -22,13 +22,13 @@ final class EventCommitHelper
      */
     private array $events = [];
 
-    private ?string $correlationId;
+    private ?string $correlationId = null;
 
-    private ?string $causationId;
+    private ?string $causationId = null;
 
     private bool $emptyEventsAllowed = false;
 
-    private function __construct()
+    protected function __construct()
     {
     }
 
