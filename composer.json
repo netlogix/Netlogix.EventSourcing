@@ -4,8 +4,12 @@
     "license": "MIT",
     "description": "Helper classes for neos/event-sourcing",
     "require": {
+        "php": "~8.2",
         "neos/event-sourcing": "^2.6",
         "netlogix/jobqueue-fast-rabbit": "^2.0"
+    },
+    "require-dev": {
+        "netlogix/event-sourcing-test-essentials": "@dev"
     },
     "autoload": {
         "psr-4": {

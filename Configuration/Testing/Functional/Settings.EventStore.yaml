@@ -1,0 +1,11 @@
+Neos:
+  EventSourcing:
+    EventStore:
+      stores:
+        'Netlogix.EventSourcing:TestingEventStore':
+          storage: Neos\EventSourcing\EventStore\Storage\Doctrine\DoctrineEventStorage
+          eventPublisherFactory: Netlogix\EventSourcing\TestEssentials\EventStore\TestingEventPublisherFactory
+          storageOptions:
+            eventTableName: nlx_eventsourcing_testing
+          listeners:
+            'Netlogix\EventSourcing\Tests\Functional\Fixtures\Domain\Listener\.*': true
